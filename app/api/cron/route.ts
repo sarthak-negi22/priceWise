@@ -7,8 +7,8 @@ import { scrapeAmazonProduct } from "@/lib/scraper";
 import { generateEmailBody, sendEmail } from "@/lib/nodemailer";
 
 // export const maxDuration = 10; // This function can run for a maximum of 300 seconds
-export const dynamic = "force-dynamic";
-export const revalidate = 1;
+export const dynamic = "auto";
+// export const revalidate = 1;
 
 export async function GET(request: Request) {
   try {
