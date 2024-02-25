@@ -63,7 +63,7 @@ export async function scrapeAmazonProduct(url : string) {
 
         const discountRate = $('.savingsPercentage').text().replace(/[-%]/g,"");
 
-        const description = extractDescription($);
+        const description = extractDescription($).slice(0,500);
 
         const categoryType = description.split('›')[0].trim().length < 25 ?  description.split('›')[0].trim() : 'Category' ;
         // console.log(categoryType);
