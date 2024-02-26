@@ -6,10 +6,10 @@ import Product from "@/lib/models/product.model";
 import { scrapeAmazonProduct } from "@/lib/scraper";
 import { generateEmailBody, sendEmail } from "@/lib/nodemailer";
 
-// export const maxDuration = 10; // This function can run for a maximum of 10 seconds
+export const maxDuration = 10; // This function can run for a maximum of 10 seconds
 export const dynamic = "force-dynamic";
-export const revalidate = 1;
-export const fetchCache = 'default-cache';
+export const revalidate = 0;
+// export const fetchCache = 'default-cache';
 
 export async function GET(request: Request) {
   try {
