@@ -90,10 +90,10 @@ const Modal = ({ productId }: Props) => {
                                     />
                                 </div>
                                 <h4 className = "dialog-head_text">
-                                    Stay updated with the product pricing alert right in your inbox!
+                                    Stay updated with the product pricing alert right in your inbox~
                                 </h4>
                                 <p className = "text-sm text-gray-600 mt-2">
-                                    Never miss a bargain again with our timely alerts~
+                                    Note: It can take even upto 10-15 minutes to get emails because of numerous requests. <b>Kindly DO NOT reload the page!</b>
                                 </p>
                             </div>
                             <form className = "flex flex-col mt-5" onSubmit = { handleSubmit }>
