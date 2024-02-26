@@ -11,6 +11,7 @@ export const dynamic = "force-dynamic";
 export const revalidate = 0;
 // export const fetchCache = 'default-cache';
 
+
 export async function GET(request: Request) {
   try {
     connectToDB();
@@ -75,6 +76,7 @@ export async function GET(request: Request) {
 
     return NextResponse.json({
       message: "Ok",
+      ok : 'true',
       data: updatedProducts,
     });
   } catch (error: any) {
